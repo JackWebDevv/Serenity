@@ -1,0 +1,39 @@
+Ryan Tilley
+Independent Travel Advisor
+
+Birmingham UK
+Ryantilley731@gmail.com
+07423059770
+
+
+Serenity Travel 
+
+Creating unique and magiacal experiences for you.
+Bucket list travel concierge service.
+ATOL & ABTA Registered.
+
+https://www.flyhighwithletsgrow.com/ Example website to follow.
+
+
+Please can you create a new website called Serenity Travel.
+I want the website to be made with HTML, CSS, Javascript and Bootstrap 5.
+I want the website to follow https://www.flyhighwithletsgrow.com/ as an example.
+I want the website to be responsive.
+I want the website to be sleek, modern and professional.
+
+
+
+
+
+
+About section
+
+Serenity Travel
+Established 2024 
+Founded By
+Ryan Tilley
+*IMAGE OF RYAN*
+
+
+
+
