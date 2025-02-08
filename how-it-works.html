@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works - Serenity Travel</title>
+    <title>How It Works - Serenity Luxury Travel</title>
     <link rel="icon" type="image/png" href="images/favicon.PNG">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
             <a class="navbar-brand" href="index.html">
                 <span class="brand-text">Serenity</span>
                 <span class="brand-icon"><i class="fas fa-compass"></i></span>
-                <span class="brand-text-2">Travel</span>
+                <span class="brand-text-2">Luxury Travel</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -60,8 +60,12 @@
     </nav>
 
     <!-- How It Works Header -->
-    <header class="page-header">
-        <div class="container">
+    <header class="page-header video-header">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="images/vid/bg video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="container position-relative">
             <div class="row">
                 <div class="col-12 text-center">
                     <h1 class="display-4">How It Works</h1>
@@ -208,251 +212,174 @@
     <!-- FAQ Section -->
     <section class="faq-section bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
-            
-            <!-- Search Bar -->
-            <div class="row justify-content-center mb-4">
-                <div class="col-lg-6">
-                    <div class="search-wrapper">
-                        <input type="text" id="faqSearch" class="form-control" placeholder="Search FAQs...">
-                        <i class="fas fa-search search-icon"></i>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h2 class="text-center">FAQs</h2>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="accordion" id="faqAccordion">
-                        <!-- Initial FAQs -->
-                        <div class="accordion-item initial-faq">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    How do you earn money from booking travel?
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    You earn commission on every booking you make through your travel platform. This includes all types of travel arrangements - from package holidays and flights to hotel stays and attractions. The commission is already built into the prices, so your clients don't pay any extra.
-                                </div>
-                            </div>
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            How do you earn money from booking travel?
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Every time you book an element of travel online, or direct with a hotel, you are giving commission away to the site you are booking through - <strong>commission that is already there</strong> - built into the price you are seeing right in front of you.</p>
+                            <p>When you become an Independent Travel Agent and partner with us, you will gain access to your very own booking system which will allow <strong>you to earn that commission back!</strong> You can book just for yourself, for friends and family or build up a client base - entirely up to you! You will earn commission back on everything you book!</p>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="accordion-item initial-faq">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    Are holidays protected?
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Yes, absolutely! All holidays are fully protected under ABTA and ATOL regulations. This means your clients (and you) have complete peace of mind knowing their money and travel arrangements are secure.
-                                </div>
-                            </div>
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Are you restricted to what you can book?
+                        </button>
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Not at all, we are partnered with over 90 household supplier names covering every element of travel imaginable, but you are not just limited to these companies - as a fully qualified Travel Agent you will have access to our host agency's travel licence which will enable you to contact any hotel brand or tourism company in the world to book travel!</p>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="accordion-item initial-faq">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    Can I do this while in a full time job?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Yes! Many of our successful partners start while working full-time. The business is flexible and can be managed around your existing commitments. You can work as much or as little as you choose.
-                                </div>
-                            </div>
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Do I need to book travel for other people, or can I just use this for myself?
+                        </button>
+                    </h3>
+                    <div id="faq3" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>This is 100% your business to do with whatever you wish. Book travel just for yourself, your family and friends, or build up a client base, it is entirely up to you and no one is ever going to tell you otherwise! There are no targets to meet, there is no contract to sign, this is a fully flexible business personalised to you! We will support you every step of the way, in whichever direction you decide to take your business - the options are endless.</p>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Hidden FAQs -->
-                        <div class="hidden-faqs" style="display: none;">
-                            <!-- Question 1 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                        How do you earn money from booking travel?
-                                    </button>
-                                </h2>
-                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        You earn commission on every booking you make through your travel platform. This includes all types of travel arrangements - from package holidays and flights to hotel stays and attractions. The commission is already built into the prices, so your clients don't pay any extra.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 2 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                                        Are you restricted to what you can book?
-                                    </button>
-                                </h2>
-                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        No, you have access to over 100 trusted suppliers and can book virtually any type of travel experience. This includes flights, hotels, package holidays, cruises, car hire, attractions, airport lounges, and even travel insurance. You can cater to any travel style or budget.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 3 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                                        Do I need to book travel for other people, or can I just use this for myself?
-                                    </button>
-                                </h2>
-                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        You can do both! While booking for others can help grow your business, you're also welcome to use the platform for your own travel arrangements and earn commission on your personal bookings.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 4 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
-                                        Are holidays protected?
-                                    </button>
-                                </h2>
-                                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes, absolutely! All holidays are fully protected under ABTA and ATOL regulations. This means your clients (and you) have complete peace of mind knowing their money and travel arrangements are secure.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 5 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
-                                        I've not worked in travel before and have no previous experience, is this a problem?
-                                    </button>
-                                </h2>
-                                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Not at all! We provide comprehensive training and ongoing support to help you succeed. Our bespoke training package covers everything you need to know, and you'll have access to 24/7 support and experienced mentors.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 6 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
-                                        What if I join and decide it's not for me? Am I tied in to anything?
-                                    </button>
-                                </h2>
-                                <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        There are no long-term commitments or contracts. If you decide this isn't for you, you can step away at any time. We believe in complete transparency and flexibility.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 7 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
-                                        How much does it cost?
-                                    </button>
-                                </h2>
-                                <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Contact us for current pricing information. We offer flexible payment options and the investment includes your complete business setup, training, and ongoing support.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 8 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">
-                                        How do clients pay for holidays?
-                                    </button>
-                                </h2>
-                                <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Clients can pay securely through your booking platform using standard payment methods including credit/debit cards. Many holidays can also be secured with a deposit, with the balance due later.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 9 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12">
-                                        Can I do this while in a full time job?
-                                    </button>
-                                </h2>
-                                <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Yes! Many of our successful partners start while working full-time. The business is flexible and can be managed around your existing commitments. You can work as much or as little as you choose.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 10 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq13">
-                                        How much money can I make from booking travel?
-                                    </button>
-                                </h2>
-                                <div id="faq13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Your earnings potential is directly related to your effort and the bookings you make. You'll earn commission on every booking, and with access to a wide range of travel products, the potential is significant. Contact us for more specific details about commission structures.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 11 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq14">
-                                        Is this a network marketing company?
-                                    </button>
-                                </h2>
-                                <div id="faq14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        No, this is not network marketing. This is your own legitimate travel business, fully protected by ABTA and ATOL. You earn commission directly from the travel bookings you make.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 12 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq15">
-                                        Where can I join from?
-                                    </button>
-                                </h2>
-                                <div id="faq15" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        We welcome partners from across the UK. Our platform and support systems are designed to work seamlessly regardless of your location.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Question 13 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq16">
-                                        How do I start?
-                                    </button>
-                                </h2>
-                                <div id="faq16" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Getting started is easy! Simply click the "Get Started Now" button below, and we'll guide you through the process. We'll provide all the information you need and answer any questions you may have.
-                                    </div>
-                                </div>
-                            </div>
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            Are holidays protected?
+                        </button>
+                    </h3>
+                    <div id="faq4" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Yes! All travel is ABTA protected, and in addition, all flight based packages are ATOL protected.</p>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Show More Button -->
-                        <div class="text-center mt-4">
-                            <button id="showMoreFaqs" class="btn btn-outline-primary">
-                                Show More FAQs <i class="fas fa-chevron-down ms-2"></i>
-                            </button>
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            How much does it cost?
+                        </button>
+                    </h3>
+                    <div id="faq5" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>£156 (ONLY)</li>
+                                <li>£46 / month</li>
+                                <li>No extra/hidden fees</li>
+                                <li>Remember... you're investing such little into your future LIFE!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                            How do clients pay for holidays?
+                        </button>
+                    </h3>
+                    <div id="faq6" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>99.9% of payments are made via a secure payment link, which are sent directly to the client - we do not personally hold any money or credit card details.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                            Can I do this while in a full time job?
+                        </button>
+                    </h3>
+                    <div id="faq7" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Yes, a lot of people in this industry run their travel business alongside a full time/part time job! This is the beauty of the flexibility with what we do.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                            How much money can I make from booking travel?
+                        </button>
+                    </h3>
+                    <div id="faq8" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Commission generally ranges between 8% - 20%, of which as Independent Travel Agents we get 70 - 80% (the most generous split in the travel industry!), the remaining amount goes to our host agency - Inteletravel (the largest home-based Travel Agency in the World). The earning potential here is uncapped - there is a lot of money to be made in booking travel for other people!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
+                            Where can I join from?
+                        </button>
+                    </h3>
+                    <div id="faq9" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>You can run your travel business from anywhere in the world, however you do have to be a resident in a country that our host agency operates in, currently as follows:</p>
+                            <ul>
+                                <li>United Kingdom</li>
+                                <li>Republic of Ireland</li>
+                                <li>USA</li>
+                                <li>Barbados</li>
+                                <li>Puerto Rico</li>
+                                <li>Jamaica</li>
+                                <li>Guadeloupe</li>
+                                <li>St Kitts / Nevis</li>
+                                <li>Bahamas</li>
+                                <li>Trinidad / Tobago</li>
+                                <li>Panama</li>
+                                <li>Cayman Islands</li>
+                                <li>Bermuda</li>
+                                <li>Belize</li>
+                                <li>Guam</li>
+                                <li>Dominican Republic</li>
+                                <li>Virgin Island</li>
+                                <li>Turks & Caicos</li>
+                                <li>Micronesia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
+                            How do I start?
+                        </button>
+                    </h3>
+                    <div id="faq10" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Press the button below and fill out the form and a member of the team will be in touch to help you get set up!</p>
                         </div>
                     </div>
                 </div>
