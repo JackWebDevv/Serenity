@@ -30,7 +30,7 @@
         </a>
     </div>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"   style="position: sticky; top: 0; margin-top: 0;">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <span class="brand-text">Serenity</span>
@@ -74,122 +74,46 @@
     <!-- Gallery Section -->
     <section class="gallery-grid">
         <div class="container">
-            <!-- Gallery Filters -->
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="beaches">Beaches</button>
-                <button class="filter-btn" data-filter="cities">Cities</button>
-                <button class="filter-btn" data-filter="nature">Nature</button>
-                <button class="filter-btn" data-filter="culture">Culture</button>
-            </div>
-
-            <!-- Gallery Grid -->
-            <div class="row g-4">
-                <!-- Gallery Item 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item" data-category="beaches">
-                        <img src="images/hero1.jpg" alt="Tropical Paradise">
-                        <div class="gallery-overlay">
-                            <h3>Tropical Paradise</h3>
-                            <p>Experience the serenity of pristine beaches</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item" data-category="nature">
-                        <img src="images/hero2.JPG" alt="Mountain Adventure">
-                        <div class="gallery-overlay">
-                            <h3>Mountain Adventure</h3>
-                            <p>Discover breathtaking mountain landscapes</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item" data-category="cities">
-                        <img src="images/hero3.JPG" alt="Urban Exploration">
-                        <div class="gallery-overlay">
-                            <h3>Urban Exploration</h3>
-                            <p>Immerse yourself in vibrant city life</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item" data-category="culture">
-                        <img src="images/hero4.PNG" alt="Cultural Experience">
-                        <div class="gallery-overlay">
-                            <h3>Cultural Experience</h3>
-                            <p>Connect with local traditions and heritage</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 5 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item" data-category="nature">
-                        <img src="images/meettheteam.jpg" alt="Natural Wonder">
-                        <div class="gallery-overlay">
-                            <h3>Natural Wonder</h3>
-                            <p>Explore the world's most stunning landscapes</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Gallery Item 6 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="gallery-item" data-category="culture">
-                        <img src="images/ryan.jpg" alt="Local Life">
-                        <div class="gallery-overlay">
-                            <h3>Local Life</h3>
-                            <p>Experience authentic local culture</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="row g-4" id="gallery-container">
+                <!-- Gallery Items will be here -->
             </div>
         </div>
     </section>
 
+    <!-- Fullscreen Image Viewer -->
+    <div class="fullscreen-viewer">
+        <button class="close-viewer">&times;</button>
+        <button class="nav-btn prev-btn">&lt;</button>
+        <button class="nav-btn next-btn">&gt;</button>
+        <div class="fullscreen-image">
+            <img src="" alt="">
+        </div>
+    </div>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Gallery Filter Script -->
+    <!-- Gallery Initialization Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const galleryItems = document.querySelectorAll('.gallery-item');
-
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
-                    this.classList.add('active');
-
-                    const filterValue = this.getAttribute('data-filter');
-
-                    galleryItems.forEach(item => {
-                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                            item.style.display = 'block';
-                            setTimeout(() => {
-                                item.style.opacity = '1';
-                                item.style.transform = 'scale(1)';
-                            }, 0);
-                        } else {
-                            item.style.opacity = '0';
-                            item.style.transform = 'scale(0.8)';
-                            setTimeout(() => {
-                                item.style.display = 'none';
-                            }, 300);
-                        }
-                    });
-                });
-            });
-        });
+        // Create gallery items
+        const galleryContainer = document.getElementById('gallery-container');
+        const imageCount = 20;
+        
+        for(let i = 1; i <= imageCount; i++) {
+            const col = document.createElement('div');
+            col.className = 'col-md-6 col-lg-4';
+            
+            col.innerHTML = `
+                <div class="gallery-item">
+                    <img src="images/gallerypage/${i}.jpg" alt="Gallery Image ${i}">
+                </div>
+            `;
+            
+            galleryContainer.appendChild(col);
+        }
     </script>
+    
+    <!-- Gallery Viewer Script -->
+    <script src="js/gallery-viewer.js"></script>
 </body>
 </html>

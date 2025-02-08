@@ -1,39 +1,17 @@
-Ryan Tilley
-Independent Travel Advisor
+Fix travel gallery page
+Decide on all travel gallery images
+Decide on descriptions for all images
 
-Birmingham UK
-Ryantilley731@gmail.com
-07423059770
-
-
-Serenity Travel 
-
-Creating unique and magiacal experiences for you.
-Bucket list travel concierge service.
-ATOL & ABTA Registered.
-
-https://www.flyhighwithletsgrow.com/ Example website to follow.
+Move announcment bar down a bit on the mobile view
 
 
-Please can you create a new website called Serenity Travel.
-I want the website to be made with HTML, CSS, Javascript and Bootstrap 5.
-I want the website to follow https://www.flyhighwithletsgrow.com/ as an example.
-I want the website to be responsive.
-I want the website to be sleek, modern and professional.
+*On start your journey you cant see start your again images attached down below same with meet the team and travel gallery you cant see the titles 
+
+*on the travel gallery to remove nature and replace with my adventures to add all my travels In but also use some off them to add into page swell with what you think will look good
+And the bottom image on gallery you cant see my face
 
 
 
 
 
-
-About section
-
-Serenity Travel
-Established 2024 
-Founded By
-Ryan Tilley
-*IMAGE OF RYAN*
-
-
-
-
+FAQ - All payments 100% not 99.9%
